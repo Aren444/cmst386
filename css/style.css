@@ -1,0 +1,14 @@
+whole-container {
+  padding: 4em;
+  background-color: rgb(235, 236, 171);
+}
+
+header {
+  font-size: 2em;
+  color: rgb(29, 13, 182);
+  text-align: center;
+}
+
+nav ul {
+   list-style-type: none;
+}
