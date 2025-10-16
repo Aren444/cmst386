@@ -1,0 +1,129 @@
+
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  background-color: #fff;
+  color: #3b2f2f;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #8b5e3c; 
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: .5em;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 0.5em;
+  position: relative;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #6b8e6b;
+  padding: 8px 14px;
+  border-radius: 4px;
+}
+
+.dropbtn {
+  background-color: #6b8e6b;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  min-width: 160px;
+  border: 1px solid #8b5e3c;
+  border-radius: 4px;
+  z-index: 20;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: #3b2f2f;
+  background-color: #fff;
+}
+
+.dropdown-content a:hover {
+  background-color: #fff;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+main {
+  padding: 2em;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  color: #6b8e6b;
+  border-bottom: 2px solid #e4cfa3;
+  padding-bottom: 0.3em;
+}
+
+p {
+  margin: 1em 0;
+}
+
+figure.gallery {
+  margin: 15px;
+  border: 1px solid #e4cfa3;
+  float: left;
+  width: 180px;
+  background: #fff;
+  border-radius: 20%;
+  overflow: hidden;
+}
+
+figure.gallery:hover {
+  border-color: #6b8e6b;
+}
+
+figure.gallery img {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}
+
+figcaption {
+  padding: 8px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #3b2f2f;
+}
+
+footer {
+  clear: both;
+  background-color: #8b5e3c;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+  margin-top: 3em;
+  border-top: 3px solid #e4cfa3;
+}
