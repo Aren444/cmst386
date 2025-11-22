@@ -1,0 +1,350 @@
+/* head and nav */
+header {
+  background-color: #8b5e3c;
+  color: whitesmoke;
+  text-align: center;
+  padding: 1em 0;
+}
+
+header h1 {
+  margin: 0.5em 0;
+}
+
+/* Main nav */
+.main-nav {
+  margin-bottom: 1rem;
+}
+
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav ul li {
+  display: inline-block;
+  position: relative;
+  margin: 0 0.5em;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: whitesmoke;
+  background-color: #6b8e6b;
+  padding: 8px 14px;
+  border-radius: 4px;
+}
+
+/* Drpdwn */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: whitesmoke;
+  border: 1px solid #8b5e3c;
+  border-radius: 4px;
+  min-width: 160px;
+}
+
+.dropdown-content a {
+  display: block;
+  color: black;
+  padding: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* main */
+main {
+  max-width: 900px;
+  margin: 2em auto;
+  padding: 0 1.5em;
+}
+
+/* Headings */
+h2 {
+  color: #6b8e6b;
+  border-bottom: 2px solid #e4cfa3;
+  padding-bottom: 0.3em;
+  margin: 1em;
+}
+
+h3 {
+  color: #8b5e3c;
+  margin-top: 1.2em;
+}
+
+/* Paragraphs */
+p {
+  margin: 1em 0;
+}
+
+/* home proj list */
+.project-list {
+  list-style-type: disc;
+  padding-left: 2em;
+  margin-top: 1em;
+}
+
+.project-list li {
+  margin-bottom: 0.5em;
+}
+
+.project-list a {
+  color: #6b8e6b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project-list a:hover {
+  text-decoration: underline;
+}
+
+/* gal */
+figure.gallery {
+  display: inline-block;
+  width: 180px;
+  margin: 15px;
+  border: 1px solid #e4cfa3;
+  border-radius: 10px;
+  background-color: #ffffff;
+  text-align: center;
+  overflow: hidden;
+}
+
+figure.gallery:hover {
+  border-color: #6b8e6b;
+}
+
+figure.gallery img {
+  width: 100px;
+  height: auto;
+  margin-top: 10px;
+}
+
+figcaption {
+  padding: 8px;
+  font-size: 0.9em;
+  color: black;
+}
+
+/* footer */
+footer {
+  background-color: #8b5e3c;
+  color: #ffffff;
+  text-align: center;
+  padding: 1em;
+  margin-top: 3em;
+  border-top: 3px solid #e4cfa3;
+}
+
+/* CTA */
+.cta-button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: linear-gradient(135deg, #684c11, #1e8663);
+  border-radius: 25px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* spacing issue */
+.main-nav {
+  margin-bottom: 1rem;
+}
+
+/* project3.html breadcrumbs*/
+.breadcrumbs {
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.breadcrumbs a{
+  text-decoration: none;
+  color: black;
+}
+
+/* Flexbox*/
+.info-panels {
+  margin-top: 2rem;
+}
+
+.panel-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.panel {
+  flex: 1 1 0;
+  padding: 1rem;
+  margin: 1em;
+  border: 1px solid #e4cfa3;
+  border-radius: 8px;
+  background-color: #fff7ea;
+}
+
+/* Hide ham checkbox */
+.nav-toggle {
+  display: none;
+}
+
+/* Hide ham icon dktp */
+.nav-toggle-label {
+  display: none;
+}
+
+/* for tablets*/
+@media (max-width: 900px) {
+  main {
+    max-width: 100%;
+    padding: 0 1em;
+  }
+
+  .panel-row {
+    flex-direction: column;
+  }
+
+  .panel {
+    margin-bottom: 1rem;
+  }
+}
+
+/*For Phones*/
+@media (max-width: 600px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  header, footer {
+    padding: 0.75em 0.5em;
+  }
+
+  .cta-button {
+    width: 68%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
+
+  .cta-button:hover {
+    opacity: 0.7;
+    transition: 0.2s;
+  }
+
+  main {
+    padding: 0 0.75em;
+  }
+
+    /* Mobile nav: show hamburger, hide links until toggled */
+  .main-nav {
+    position: relative;
+    text-align: left;
+    padding: 0 0.75em;
+  }
+
+  .nav-toggle-label {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0.5em 0;
+  }
+
+  .nav-links {
+    display: none;
+    list-style: none;
+    margin: 0.5em 0 0;
+    padding: 0;
+  }
+
+  .nav-links li {
+    display: block;
+    margin: 0.25em 0;
+  }
+
+  .nav-links a {
+    display: block;
+    width: 100%;
+  }
+
+  .nav-toggle:checked ~ .nav-links {
+    display: block;
+    }
+
+    .main-nav ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    .main-nav ul li {
+      display: block;
+      margin: 0.25em 0;
+    }
+}
+
+/* Hamburger icon bars */
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  width: 24px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.nav-toggle-label span::before {
+  top: -7px;
+}
+
+.nav-toggle-label span::after {
+  top: 7px;
+}
+
+
+
+
+
+
+
+/*LESS (from lesscss.org) */
+
+body {
+  margin: 0;
+  font-family: "Nunito", Arial, sans-serif;
+  background-color: whitesmoke;
+  color: black;
+  line-height: 1.6;
+}
+section {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #fdfdfd;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+nav ul li a {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  background-color: #396639;
+  color: white;
+}

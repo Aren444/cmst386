@@ -1,0 +1,44 @@
+@main-color: whitesmoke;
+@accent-color: rgb(57, 102, 57) ;
+@text-font: "Nunito", Arial, sans-serif;
+@text-color: black;
+
+body {
+    margin: 0;
+    font-family: @text-font;
+    background-color: @main-color;
+}
+
+.btn-basic() {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.box-shadow-basic() {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+section {
+    .box-shadow-basic();
+    background-color: lighten(@main-color, 3%);
+}
+nav {
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      margin-right: 1rem;
+
+      a {
+        .btn-basic();
+        background-color: @accent-color;
+        color: white;
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 3 – Preprocessing</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body id="top">
+  <header>
+    <nav class="main-nav">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="project3.html">Project 3</a></li>
+      </ul>
+    </nav>
+
+    <nav class="breadcrumbs">
+        <a href="../index.html">Home</a> &gt;
+        <a href="project3.html">Project 3</a> &gt;
+        <span>Preprocessing</span>
+    </nav>
+  </header>
+
+  <main>
+    <h1>CSS Preprocessing with LESS</h1>
+
+    <section id="implementation">
+      <h2>Client Side vs Server Side</h2>
+      <p>Client side preprocessing means the browser downloads the .less file and converts it to CSS using JavaScript. That is helpful while testing styles but it can slow down loading because the browser has extra work to do. Server side preprocessing uses a tool like Node or an online compiler to convert .less to regular .css before uploading a site. That is faster and is usually used for real websites.</p>
+    </section>
+
+    <section id="features">
+      <h2>LESS Features</h2>
+      <p>LESS has lots of tools that make your CSS more organized. Variables let me store colors and spacing values in one place so I can reuse them instead of re-typing out a layout again. I like to think of mixins like my kitchen recipes because I can create a group ingredient types. My dry items like flour,salt, baking soda go in one bowl, So for buttons, for example, could have the "bowl" of button styling "ingredients", and then apply it to other things when applicable. Lighten and darken functions are nice also to adjust to background colors appropriately. It's usefull all around, but almost a necessity for big websites to stay consistent.</p>
+    </section>
+
+    <p><a href="#top" id="back-to-top">Back to top</a></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Amy Bird</p>
+  </footer>
+</body>
+</html>
