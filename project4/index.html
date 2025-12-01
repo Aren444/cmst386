@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blissful Bakes | Home</title>
+
+    <!--Favicon cake image-->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <!--font stuff-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
+    <!-- SEO -->
+    <meta name="description" content="Delicious tarts, cheesecakes, and custom cakes at Blissful Bakes.">
+    <meta name="keywords" content="blissful bakes, cakes, bakery, tarts, order dessert, custom cake, local bakery">
+    <meta name="author" content="Amy Bird">
+    <meta name="copyright" content="Blissful Bakes 2025">
+    <meta name="robots" content="index,follow">
+<!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+<nav>
+    <ul>
+            <li><a href="index.html" class="active"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="menu.html"><i class="fa-solid fa-utensils"></i> Menu</a></li>
+            <li><a href="cake-builder.html"><i class="fa-solid fa-cake-candles"></i> Cake Builder</a></li>
+            <li><a href="gallery.html"><i class="fa-solid fa-images"></i> Gallery</a></li>
+            <!--<li><a href="specials.html"><i class="fa-solid fa-star"></i> Specials</a></li>-->
+            <li><a href="how-it-works.html"><i class="fa-solid fa-list-check"></i> How It Works</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+            <li><a href="cart.html"><i class="fa-solid fa-shopping-cart"></i> Cart</a></li>
+    </ul>
+</nav>
+
+    <!-- INTRO -->
+    <header>
+        <h1>Welcome to Blissful Bakes</h1>
+        <img src="images/hero-image.jpg" alt="Amy decorating a fresh baked cake" class="hero-image">
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <p>
+            Blissful Bakes brings dessert dreams to life with quality tarts,
+            cheesecakes, gluten-free treats, and custom cakes. Browse our menu or use our Cake Builder tool to design
+            something unique. 
+        </p>
+
+<!-- SEARCH BOX -->
+<section class="search-box">
+    <h2>Search</h2>
+
+    <form action="https://duckduckgo.com/" target="_blank" method="GET">
+        <label for="search">Search:</label>
+        <input type="text" id="search" name="q" placeholder="Search cakes, tarts, and treats" required>
+        <input type="hidden" name="sites" value="blissfulbakes.com">
+        <button type="submit">Search</button>
+    </form>
+</section>
+
+    </main>
+
+
+    <footer>
+
+        <p>© 2025 Blissful Bakes – All Rights Reserved</p>
+        <p><a href="policies.html" target="_blank">Store Policies and Privacy Information (new tab)</a></p>
+        <p id="date-time"></p>
+
+    </footer>
+
+    <!-- JS -->
+    <script src="js/date-time.js"></script>
+    <!--<script src="js/internal-search.js"></script>
+-->
+</body>
+</html>

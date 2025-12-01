@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blissful Bakes | Checkout</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
+    <meta name="description" content="Checkout page for Blissful Bakes sample orders.">
+    <meta name="keywords" content="checkout, payment, blissful bakes">
+    <meta name="author" content="Amy Bird">
+    <meta name="robots" content="noindex,follow">
+    <meta name="copyright" content="Blissful Bakes 2025">
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+
+<nav>
+    <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="menu.html"><i class="fa-solid fa-utensils"></i> Menu</a></li>
+            <li><a href="cake-builder.html"><i class="fa-solid fa-cake-candles"></i> Cake Builder</a></li>
+            <li><a href="gallery.html"><i class="fa-solid fa-images"></i> Gallery</a></li>
+            <!--<li><a href="specials.html"><i class="fa-solid fa-star"></i> Specials</a></li>-->
+            <li><a href="how-it-works.html"><i class="fa-solid fa-list-check"></i> How It Works</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+            <li><a href="cart.html"><i class="fa-solid fa-shopping-cart"></i> Cart</a></li>
+    </ul>
+</nav>
+
+<header>
+    <h1>Checkout</h1>
+    <p class="checkout-note">Please review your order summary and visit our   <a href="contact.html" target="blank" class="highlight-link">contact page</a>
+        (new tab) to communicate about your order.</p>
+</header>
+
+<main class="checkout-wrapper">
+
+    <!-- ORDER SUMMARY -->
+    <section class="checkout-section">
+        <h2> </h2>
+        <div id="checkout-summary">
+            <!-- Filled by cart.js  -->
+        </div>
+    </section>
+
+    <!-- Demo Checkout-->
+    <section class="checkout-section">
+        <h2 class="checkout-note">Billing Information</h2>
+        <form id="checkout-form" action="#" method="post" novalidate>
+            <div class="form-row">
+                <label for="full-name">Full name</label>
+                <input type="text" id="full-name" name="full-name" required>
+            </div>
+
+            <div class="form-row">
+                <label for="email">Email for confirmation</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-row">
+                <label for="phone">Phone number</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+
+            <div class="form-row">
+                <label for="pickup-date">Preferred pickup date</label>
+                <input type="date" id="pickup-date" name="pickup-date" required>
+            </div>
+
+            <h3>Payment (mock only)</h3>
+            <p class="note">
+                Please don't put real info here until business is real!
+            </p>
+
+            <div class="form-row">
+                <label for="card-number">Card number</label>
+                <input type="text" id="card-number" name="card-number" maxlength="19" placeholder="1234 5678 9012 3456">
+            </div>
+
+            <div class="form-row">
+                <label for="card-exp">Exp</label>
+                <input type="text" id="card-exp" name="card-exp" placeholder="MM/YY">
+            </div>
+
+            <div class="form-row">
+                <label for="card-cvv">CVV</label>
+                <input type="text" id="card-cvv" name="card-cvv" maxlength="4">
+            </div>
+
+            <button type="submit">Place Order</button>
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2025 Blissful Bakes – All Rights Reserved</p>
+    <p><a href="policies.html" target="_blank" rel="noopener">Store Policies and Privacy Information (new tab)</a></p>
+    <p id="date-time"></p>
+</footer>
+
+<script src="js/date-time.js"></script>
+<script src="js/cart.js"></script>
+<script>
+  // Basic demo submit handler
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("checkout-form");
+    if (form) {
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        alert("Thank you. This is a demo checkout only.");
+      });
+    }
+  });
+</script>
+</body>
+</html>

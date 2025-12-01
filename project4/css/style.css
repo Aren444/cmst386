@@ -1,0 +1,666 @@
+/* Global Reset */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI";
+  line-height: 1.6;
+  background-color: #fdf7f9;
+  color: #333333;
+}
+
+/* Base Elements */
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: #b13d6b;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+ul {
+  margin-left: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-bottom: 0.3rem;
+}
+
+/* Headings */
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.75rem;
+}
+
+h2 /* this includes the ul for Tarts, cookies, and cheesecakes categories in menu - ill need to create a section for that in @ media later to center on desktops */{
+  font-size: 1.4rem;
+  margin: 1.5rem 0 0.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin: 1rem 0 0.5rem;
+}
+
+
+/* Paragraph spacing */
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* Layout */
+
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header {
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  padding: 2rem;
+}
+
+footer {
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  background-color: #f0e2e9;
+  margin-top: 2rem;
+}
+
+/* Navigation */
+
+nav {
+  background-color: #ffffff;
+  border-bottom: 2px solid #9da6db;
+}
+
+nav ul,
+nav li {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  padding: 0.5rem;
+  justify-content: center;
+}
+
+nav a {
+  display: block;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  background-color: #f4d9e4;
+}
+
+nav a i /*icons (fa) */
+ {
+  margin-right: 0.4rem;
+  font-size: 1rem;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #e5bfd3;
+}
+
+nav a.active {
+  background-color: #9da6db4f;
+}
+
+/* Hero Image */
+
+.hero-image {
+  margin: 1rem auto;
+  border-radius: 0.75rem;
+  max-height: 320px;
+  object-fit: cover;
+}
+
+/* Gallery */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.gallery-item {
+  text-align: center;
+}
+
+.gallery-item a {
+  display: block;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover,
+.gallery img:focus {
+  transform: scale(1.05);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+/* Gallery Images */
+
+.zoom {
+  transition: transform 0.3s ease, box-shadow 0.5s ease;
+  border-radius: 0.75rem;
+}
+
+.zoom:hover,
+.zoom:focus {
+  transform: scale(1);
+  box-shadow: 0 8px 18px rgba(7, 7, 7, 0.637);
+}
+
+/* Image link labels */
+
+.img-label {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+/* Back to gallery link */
+
+.back-link-container {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: white
+}
+
+.back-link {
+  font-size: 1.3rem;
+  text-decoration: underline;
+  font-weight: 600; 
+}
+
+/* Glow-Up for the contact form */
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+form {
+  margin-top: 2rem;
+  padding: 1.5rem 1.75rem;
+  background:#9da6db4f;
+  border-radius: 1rem;
+  border: 1px solid #e3cad7;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, .8);
+}
+
+/* Form headline */
+
+fieldset /* to got rid of weird lines on sides*/ {
+  border: none;
+  padding: 0;
+}
+
+legend /*GPT suggested legend rather than another h2, looks good */ {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #b13d6b;
+  text-align: center;
+}
+
+/* Contact form labels and fields */
+
+label {
+  display: block;
+  margin-top: 0.9rem;
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+  color: #6a2b47; /* not sure on this color - revist later */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"], /*used tel input type for phone in checkout - update- changed phone in contact to tel for better UX (popup keyboard) */
+select,
+textarea {
+  width: 100%;
+  padding: 0.7rem 0.7rem;
+  border-radius: 0.6rem;
+  border: 1px solid #cfa4bc;
+  font: inherit; /* i chose inherit so the same font gets typed in as what i used for site*/
+  background-color: #fffdfc;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.required {
+  color: #b13d6b;   /* same pink as theme */
+  font-weight: 700; 
+  font-size: 1.1rem;
+  margin-right: 0.25rem; /* needed spacing */
+}
+
+
+/* Focus states added for accessibility tools */
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #b13d6b;
+  box-shadow: 0 0 0 3px rgba(177, 61, 107, 0.15);
+}
+
+/* Character counter */
+
+#charCount {
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+  color: #7a4a63;
+}
+
+/* Radio and checkbox groups */
+
+.radio-group,
+.checkbox-group {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 0.9rem;
+  margin: 0.6rem 0 0.8rem 0;
+}
+
+.radio-group li,
+.checkbox-group li {
+  display: flex;
+  align-items: center;
+}
+
+.radio-group input[type="radio"],
+.checkbox-group input[type="checkbox"] {
+  margin-right: 0.35rem;
+}
+
+.radio-group label,
+.checkbox-group label {
+  background-color: #f4d9e4;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  cursor: pointer; /* love this! going to use again! */
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.radio-group label:hover,
+.checkbox-group label:hover {
+  background-color: #e3cad7;
+  transform: translateY(-1px);
+}
+
+/* Form buttons */
+
+form button,
+form input[type="submit"] {
+  margin-top: 1.25rem;
+  padding: 0.6rem 1.3rem;
+  border-radius: 999px;
+  border: none;
+  font: inherit;
+  background-color: #b13d6b;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s, box-shadow 0.1s;
+}
+
+form button:hover,
+form button:focus,
+form input[type="submit"]:hover,
+form input[type="submit"]:focus {
+  background-color: #912f56;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Menu categories */
+
+.menu-list  {
+  list-style: none;
+  margin: center;
+  padding: 0;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #e3cad7;
+}
+
+.cart-message /* Freshly baked treats made to order*/ {
+  font-size: 0.9rem;
+  color: #b13d6b;
+  min-height: 1.2rem;   
+  margin-top: 0.5rem;
+}
+
+
+/* menu li names */
+
+.item-name {
+  flex: 1 1 auto;
+}
+
+/* menu-li prices */
+
+.item-price {
+  width: 4rem;
+  text-align: right;
+  font-weight: bold;
+  color: #b13d6b;
+}
+
+/* Add to cart button */
+
+.menu-item .add-to-cart /* to target only elements with add to cart class that are inside the menu items so that the cake builder add to cart can operate different (nesting) */ {
+  white-space: nowrap;
+  font-size: 0.90rem;
+  padding: 0.35rem 0.8rem;
+  background-color: #9da6db3b;
+}
+
+/* Cart table layout */
+
+.cart-table {
+  width: 100%;
+  max-width: 700px;
+  margin: 1rem auto 1.5rem;
+  border-collapse: collapse; /*to make it look cleaner without lines everywhere*/
+  background-color: #ffffff;
+  border-radius: 0.75rem;     
+  border: 3px solid #9da6db;
+}
+
+.cart-table th,
+.cart-table td {
+  padding: 0.6rem 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #f5c8e2;
+}
+
+.cart-table th {
+  background-color: #f4d9e4;
+  font-weight: 600;
+}
+
+.cart-table tfoot td {
+  font-weight: 700;
+  border-top: 2px solid #9da6db9c;
+  padding-top: 0.6rem;
+}
+
+
+/* Cart page buttons */
+
+.cart-actions /*GPT suggest flex display for flexable container for buttons and allow wrapping for phones display  */ {
+    display: flex;
+  justify-content: center;
+    flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.5rem 0 1.5rem;
+  gap: 2rem;
+}
+
+.cart-btn {
+  padding: 0.8rem 1.4rem;
+  font-size: 1rem;
+  border-radius: 0.6rem;
+  border: 1.5px solid #b13d6b;
+  background-color: #ffffff;
+  color: #b13d6b;
+  cursor: pointer;
+  transition: all 0.2s ;
+}
+
+.cart-btn:hover,
+.cart-btn:focus {
+  background-color: #b13d6b;
+  color: #ffffff;
+}
+
+#clear-cart /* adjustment to make clear cart button look less inviting so avoid mistakes */ {
+  background-color: #ddcbd4c7;
+  color: #b13d6b;
+}
+
+.proceed-btn {
+  font-weight: 800;
+  border-width: 3px;
+  box-shadow: 0 4px 10px rgba(0,0,0,.20);
+}
+
+.highlight-link {
+  background-color: #9da6db4f;
+  text-decoration: underline;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.4rem;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.20);
+}
+
+
+/* Checkout page styles */
+.checkout-note {
+  font-size: 1.6rem;
+  font-weight: 600;      
+  color: #6a2b47;      
+  margin-top: 0.4rem;
+  padding-top: 0.6rem;
+  border-top: 2px solid #b13d6b;
+}
+
+#checkout-summary {
+  Background: #fff;
+  padding: 1rem;
+  margin: 1rem auto;
+  border-radius: 0.6rem;
+border: 2px solid #9da6db;
+max-width: 500px;
+font-size: 1rem;
+}
+
+
+
+/* Cake builder actions section */
+.builder-actions {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.cake-size-img {
+  max-width: 80%;
+  display: block;
+  margin: 0 auto 1rem;
+  border-radius: 0.6rem;
+}
+
+/* Overlay that greys out the page */
+.cake-review-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  z-index: 999;
+}
+
+/* Class to show the overlay */
+.cake-review-overlay.is-visible {
+  display: flex;
+}
+
+/* The review box itself */
+.cake-review-box {
+  max-width: 480px;
+  width: 100%;
+  background: #fffdfc;
+  border-radius: 1rem;
+  padding: 1.5rem 1.75rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.cake-review-box h2 {
+  margin-bottom: 0.75rem;
+  color: #b13d6b;
+}
+
+#cake-review-text {
+  margin-bottom: 1.25rem;
+  font-size: 1rem;
+}
+
+#cake-review-text .estimate-line {
+  margin-top: 0.5rem;
+  font-size: 1.05rem;
+  color: #6a2b47;
+}
+
+
+
+/* Buttons in the review box */
+.cake-review-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+#cake-review-text ul {
+  margin: 0 0 1rem 1.2rem;
+  list-style: disc;
+}
+
+#cake-review-text li {
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+
+/* Secondary button style (white with pink border) */
+.secondary-btn {
+  background-color: #ffffff;
+  color: #b13d6b;
+  border: 2px solid #b13d6b;
+}
+
+.secondary-btn:hover,
+.secondary-btn:focus {
+  background-color: #fdf0f6;
+}
+
+
+/* Headings only */
+h1, h2 {
+  font-family: 'Courgette', cursive;
+}
+.divider {
+  margin: 4rem auto;
+  width: 75%;
+  background-color: #9da6db5e;
+  height: 3px;
+}
+
+
+
+/*for desktops*/
+
+@media (min-width: 768px) {
+  body {
+    font-size: 17px;
+  }
+
+  main {
+    padding: 2rem;
+  }
+
+  header {
+    padding: 1.5rem 2rem 0.5rem;
+  }
+
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  form {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .menu-item {
+    max-width: 650px; /* looked weird with the flex wrap that works great on cell so this brought the items closer together*/
+    margin: 0 auto;
+  }
+
+  .item-name {
+    flex: 0 0 60%;
+  }
+
+  .menu-list {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .menu-section {
+    max-width: 500px;
+    margin: 0 auto 2rem;
+  }
+
+}

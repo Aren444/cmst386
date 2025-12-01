@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blissful Bakes | Menu</title>
+
+    <!-- SEO-->
+    <meta name="description" content="Menu of tarts, cheesecakes, cakes, and treats from Blissful Bakes.">
+    <meta name="keywords" content="bakery menu, desserts, cakes, tarts, cheesecakes, blissful bakes">
+    <meta name="author" content="Amy Bird">
+    <meta name="copyright" content="Blissful Bakes 2025">
+    <meta name="robots" content="index,follow">
+
+<!--font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+          <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="menu.html" class="active"><i class="fa-solid fa-utensils"></i> Menu</a></li>
+            <li><a href="cake-builder.html"><i class="fa-solid fa-cake-candles"></i> Cake Builder</a></li>
+            <li><a href="gallery.html"><i class="fa-solid fa-images"></i> Gallery</a></li>
+            <!--<li><a href="specials.html"><i class="fa-solid fa-star"></i> Specials</a></li>-->
+            <li><a href="how-it-works.html"><i class="fa-solid fa-list-check"></i> How It Works</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+            <li><a href="cart.html"><i class="fa-solid fa-shopping-cart"></i> Cart</a></li>
+    </ul>
+</nav>
+
+<!-- PAGE HEADER -->
+<header>
+    <h1>Our Menu</h1>
+    <p>Freshly baked treats made to order.</p>
+    <p id="cart-message" class="cart-message" aria-live="polite"></p>
+</header>
+
+<main class="menu-wrapper">
+
+    <!-- TARTS -->
+<section class="menu-section">
+    <h2>Tarts</h2>
+<ul class="menu-list">
+  <li class="menu-item">
+    <span class="item-name">Lemon Tart</span>
+    <span class="item-price">$18</span>
+    <button class="add-to-cart" data-item="Lemon Tart" data-price="22">
+      Add to Cart
+    </button>
+  </li>
+
+  <li class="menu-item">
+    <span class="item-name">Chocolate Ganache Tart</span>
+    <span class="item-price">$26</span>
+    <button class="add-to-cart" data-item="Chocolate Ganache Tart" data-price="26">
+      Add to Cart
+    </button>
+  </li>
+
+  <li class="menu-item">
+    <span class="item-name">Fresh Berry Tart</span>
+    <span class="item-price">$26</span>
+    <button class="add-to-cart" data-item="Fresh Berry Tart" data-price="26">
+      Add to Cart
+    </button>
+  </li>
+</ul>
+
+
+    <h2>Cookies 12ct box</h2>
+<ul class="menu-list">
+  <li class="menu-item">
+    <span class="item-name">Reesees Delight</span>
+    <span class="item-price">$40</span>
+    <button class="add-to-cart" data-item="Reesees Delight" data-price="40">
+      Add to Cart
+    </button>
+  </li>
+
+  <li class="menu-item">
+    <span class="item-name">Chocolate Chip</span>
+    <span class="item-price">$25</span>
+    <button class="add-to-cart" data-item="Chocolate Chip" data-price="25">
+      Add to Cart
+    </button>
+  </li>
+
+  <li class="menu-item">
+    <span class="item-name">Oatmeal Cranberry</span>
+    <span class="item-price">$30</span>
+    <button class="add-to-cart" data-item="Oatmeal Cranberry" data-price="30">
+      Add to Cart
+    </button>
+  </li>
+</ul>
+
+    <h2>Cheesecakes</h2>
+<ul class="menu-list">
+  <li class="menu-item">
+    <span class="item-name">Orange Pistacio</span>
+    <span class="item-price">$45</span>
+    <button class="add-to-cart" data-item="Orange Pistacio" data-price="45">
+      Add to Cart
+    </button>
+  </li>
+
+  <li class="menu-item">
+    <span class="item-name">Strawberry Basil</span>
+    <span class="item-price">$42</span>
+    <button class="add-to-cart" data-item="Strawberry Basil" data-price="42">
+      Add to Cart
+    </button>
+  </li>
+
+  <li class="menu-item">
+    <span class="item-name">Mango Madness</span>
+    <span class="item-price">$45</span>
+    <button class="add-to-cart" data-item="Mango Madness" data-price="45">
+      Add to Cart
+    </button>
+  </li>
+</ul>
+
+</section>
+
+<!--Foot-->
+    <footer>
+
+        <p>© 2025 Blissful Bakes – All Rights Reserved</p>
+        <p><a href="policies.html" target="_blank">Store Policies and Privacy Information (new tab)</a></p>
+        <p id="date-time"></p>
+
+    </footer>
+
+    <!-- JS -->
+     <script src="js/date-time.js"></script>
+    <script src="js/cart.js"></script>
+</main>
+</body>
+</html>

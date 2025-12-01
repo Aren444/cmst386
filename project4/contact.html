@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blissful Bakes | Contact</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Contact Blissful Bakes with questions.">
+    <meta name="keywords" content="contact blissful bakes, bakery contact, cake questions, recipe newsletter, birthday club">
+    <meta name="author" content="Amy Bird">
+    <meta name="copyright" content="Blissful Bakes 2025">
+    <meta name="robots" content="index,follow">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="menu.html"><i class="fa-solid fa-utensils"></i> Menu</a></li>
+            <li><a href="cake-builder.html"><i class="fa-solid fa-cake-candles"></i> Cake Builder</a></li>
+            <li><a href="gallery.html"><i class="fa-solid fa-images"></i> Gallery</a></li>
+            <!--<li><a href="specials.html"><i class="fa-solid fa-star"></i> Specials</a></li>-->
+            <li><a href="how-it-works.html"><i class="fa-solid fa-list-check"></i> How It Works</a></li>
+            <li><a href="contact.html" class="active"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+            <li><a href="cart.html"><i class="fa-solid fa-shopping-cart"></i> Cart</a></li>
+        </ul>
+    </nav>
+
+    <!-- LOGO -->
+    <img src="images/logo.png" alt="Blissful Bakes Logo" class="logo">
+
+    <!-- MAIN HEADING -->
+    <header>
+        <h1>Contact Blissful Bakes</h1>
+    </header>
+
+    <main>
+        <!-- Intro text so this page stands alone -->
+        <p>
+            Use this form to ask questions or start a custom cake conversation. Share as much detail as you like 
+            about your event, flavors, or any allergies so we can respond with 
+            helpful suggestions and pricing.
+        </p>
+
+        <!-- MAIN FORM -->
+        <form id="registrationForm"
+              action="mailto:orders@blissfulbakes.com"
+              method="post"
+              enctype="text/plain">
+
+            <fieldset>
+                <legend>Ask a question, let me know any allergen info, or any special requets right here!</legend>
+<p>
+  Only fields marked with <span class="required">*</span> are required.
+  Address is only needed here for delivery requests.
+</p>
+
+              
+                <!-- FIRST NAME (REQUIRED) -->
+                <label for="firstName">
+                    <span class="required">*</span>First Name:
+                </label>
+                <input type="text" id="firstName" name="firstName"
+                       placeholder="First Name" required tabindex="1">
+
+
+                <!-- LAST NAME (OPTIONAL) -->
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName"
+                       placeholder="Last Name" tabindex="2">
+
+                <!-- ADDRESS -->
+                <p>We offer local delivery, within 10 miles of Covington, WA. Cookies may be shipped with 2 day delivery option.</p>
+
+                <label for="address">Street Address:</label>
+                <input type="text" id="address" name="address"
+                       placeholder="123 Cupcake Lane" tabindex="3">
+
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city"
+                       placeholder="City" tabindex="4">
+
+                <label for="state">State:</label>
+                <select id="state" name="state" tabindex="5">
+                    <option value="">Select State</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+                </select>
+
+                <label for="zip">Zip Code:</label>
+                <input type="text" id="zip" name="zip"
+                       placeholder="Zip Code" tabindex="6">
+
+                <!-- PHONE -->
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber"
+                       placeholder="000-000-0000  OR  (000)000-0000" tabindex="7">
+
+                <!-- EMAIL (REQUIRED) -->
+<label for="email">
+  <span class="required">*</span>Email Address:
+</label>
+<input type="text" id="email" name="email"
+       placeholder="name@example.com" required tabindex="8">
+
+
+                <!-- RADIO: ALLERGIES -->
+                <label>Any allergies?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="allergy" value="Yes"> Yes</label>
+                    <label><input type="radio" name="allergy" value="No"> No</label>
+                    <label><input type="radio" name="allergy" value="Sensitivity"> Sensitivity</label>
+                </div>
+
+                <!-- CHECKBOXES: REFERRAL -->
+                <label>How did you hear about us?</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="referral" value="Facebook"> Facebook</label>
+                    <label><input type="checkbox" name="referral" value="Search Engine"> Search Engine</label>
+                    <label><input type="checkbox" name="referral" value="Friend"> Friend</label>
+                </div>
+
+                <!-- COMMENTS -->
+                <label for="comments">Comments or Special Requests:</label>
+                <textarea id="comments" name="comments" rows="4"
+                          placeholder="Any allergies, event details, or design specifications (400 characters available here). I will call or email you to go over details."></textarea>
+                <p id="charCount">0 / 400 characters</p>
+
+                <!-- SUBMIT -->
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+
+            </fieldset>
+        </form>
+    </main>
+
+    <!-- FOOTER WITH DATE/TIME -->
+    <footer>
+        <p>© 2025 Blissful Bakes – All Rights Reserved</p>
+        <p><a href="policies.html" target="_blank" rel="noopener">Store Policies and Privacy Information (new tab)</a></p>
+        <p id="date-time"></p>
+    </footer>
+
+    <!-- JavaScript files -->
+    <script src="js/date-time.js"></script>
+    <script src="js/form-validation.js"></script>
+</body>
+</html>

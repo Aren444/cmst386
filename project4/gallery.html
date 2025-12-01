@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blissful Bakes | Gallery</title>
+
+    <!--font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Visual gallery of custom cakes, tarts, and seasonal bakery treats from Blissful Bakes.">
+    <meta name="keywords" content="bakery gallery, custom cake photos, dessert images, blissful bakes">
+    <meta name="author" content="Amy Bird">
+    <meta name="copyright" content="Blissful Bakes 2025">
+    <meta name="robots" content="index,follow">
+
+    <!--css-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!--favicon-->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+<nav>
+    <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="menu.html"><i class="fa-solid fa-utensils"></i> Menu</a></li>
+            <li><a href="cake-builder.html"><i class="fa-solid fa-cake-candles"></i> Cake Builder</a></li>
+            <li><a href="gallery.html" class="active"><i class="fa-solid fa-images"></i> Gallery</a></li>
+            <!--<li><a href="specials.html"><i class="fa-solid fa-star"></i> Specials</a></li>-->
+            <li><a href="how-it-works.html"><i class="fa-solid fa-list-check"></i> How It Works</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+            <li><a href="cart.html"><i class="fa-solid fa-shopping-cart"></i> Cart</a></li>
+    </ul>
+</nav>
+
+    <!-- Gal title -->
+    <header>
+        <h1>Past Creations & Customer Favorites Gallery</h1>
+    </header>
+
+    <!--Description-->
+    <main>
+        <p>
+            Take a look at some of our previous cakes and treat orders. 
+            Images are clickable catergories so feel free to explore! We sometimes use this 
+            gallery during custom order conversations.
+        </p>
+
+        <!-- Pic Links-->
+        <section aria-labelledby="gallery-heading">
+            <h2 id="gallery-heading">Browse by dessert type</h2>
+
+            <div class="gallery">
+
+                <div class="gallery-item">
+                    <a href="cakes.gallery.html">
+                        <img src="images/gal-img-links/cakes.jpg"
+                             alt="Cake image that leads to cake gallery">
+                    </a>
+                    <span class="img-label">Cakes</span>
+                </div>
+
+                <div class="gallery-item">
+                    <a href="cheesecakes.gallery.html">
+                        <img src="images/gal-img-links/cheesecakes.jpg"
+                             alt="Cheesecake photo that leads to cheesecake gallery">
+                    </a>
+                    <span class="img-label">Cheesecakes</span>
+                </div>
+
+                <div class="gallery-item">
+                    <a href="tarts.gallery.html">
+                        <img src="images/gal-img-links/tarts.jpg"
+                             alt="Sample tart that leads to tart gallery">
+                    </a>
+                    <span class="img-label">Tarts</span>
+                </div>
+
+                <div class="gallery-item">
+                    <a href="cookies.gallery.html">
+                        <img src="images/gal-img-links/cookies.jpg"
+                             alt="Cookie platter that leads to cookie gallery">
+                    </a>
+                    <span class="img-label">Cookies</span>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+    <!-- FOOTER WITH DATE/TIME -->
+    <footer>
+        
+        <p>© 2025 Blissful Bakes – All Rights Reserved</p>
+        <p><a href="policies.html" target="_blank">Store Policies and Privacy Information (new tab)</a></p>
+        <p id="date-time"></p>
+
+    </footer>
+
+    <script src="js/date-time.js"></script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blissful Bakes | Cake Builder</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Use the Blissful Bakes Cake Builder to plan your perfect custom cake with flavors, fillings, and decorations.">
+    <meta name="keywords" content="custom cake builder, design your cake, blissful bakes custom cakes">
+    <meta name="author" content="Amy Bird">
+    <meta name="copyright" content="Blissful Bakes 2025">
+    <meta name="robots" content="index,follow">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="menu.html"><i class="fa-solid fa-utensils"></i> Menu</a></li>
+            <li><a href="cake-builder.html"class=active><i class="fa-solid fa-cake-candles"></i> Cake Builder</a></li>
+            <li><a href="gallery.html"><i class="fa-solid fa-images"></i> Gallery</a></li>
+            <!--<li><a href="specials.html"><i class="fa-solid fa-star"></i> Specials</a></li>-->
+            <li><a href="how-it-works.html"><i class="fa-solid fa-list-check"></i> How It Works</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+            <li><a href="cart.html"><i class="fa-solid fa-shopping-cart"></i> Cart</a></li>
+        </ul>
+    </nav>
+
+    <!-- PAGE HEADING -->
+    <header>
+        <h1>Build Your Custom Cake</h1>
+    </header>
+
+    <main>
+        <p>
+            Use this simple Cake Builder to sketch out your dream dessert. Choose a size, flavor, filling, and frosting. These are single tier, 3 layer cakes.
+            In the contact form, feel free to let me know if you want your cakes tiered and your decoration choice; 
+            This will be a seperate charge agreed upon before construction and paid for at pickup. 
+        </p>
+
+        <!-- CAKE SIZE -->
+        <section class="cake.size-section">
+            <img src="images/cake.size.jpg" alt="Cake size comparison" class="cake-size-img">
+
+            <h2>Cake Size</h2>
+
+            <ul class="radio-group">
+                <li>
+                    <input type="radio" name="size" id="size6" value="6 inch">
+                    <label for="size6">6 inch round- $40 (serves 7)</label>
+                </li>
+                <li>
+                    <input type="radio" name="size" id="size8" value="8 inch">
+                    <label for="size8">8 inch round- $55 (serves 12)</label>
+                </li>
+                <li>
+                    <input type="radio" name="size" id="size10" value="10 inch">
+                    <label for="size10">10 inch round- $75 (serves 18)</label>
+                </li>
+            </ul>
+        </section>
+
+        <!-- CAKE FLAVOR -->
+        <section>
+            <h2>Cake Flavor</h2>
+            <ul class="radio-group">
+                <li>
+                    <input type="radio" name="flavor" id="vanilla" value="Vanilla bean">
+                    <label for="vanilla">Vanilla bean</label>
+                </li>
+                <li>
+                    <input type="radio" name="flavor" id="chocolate" value="Rich chocolate">
+                    <label for="chocolate">Rich chocolate</label>
+                </li>
+                <li>
+                    <input type="radio" name="flavor" id="lemon" value="Lemon zest">
+                    <label for="lemon">Lemon zest</label>
+                </li>
+                <li>
+                    <input type="radio" name="flavor" id="gfChocolate" value="Gluten free chocolate">
+                    <label for="gfChocolate">Gluten free chocolate</label>
+                </li>
+            </ul>
+        </section>
+
+        <!-- FILLING CHOICES -->
+        <section>
+            <h2>Filling (instead of frosting between layers - Adds $10)</h2>
+            <ul class="checkbox-group">
+                <li>
+                    <input type="checkbox" id="fillingRaspberry" name="filling" value="Raspberry jam">
+                    <label for="fillingRaspberry">Raspberry</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="fillingLemon" name="filling" value="Lemon jam">
+                    <label for="fillingLemon">Lemon</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="fillingBlueberry" name="filling" value="Blueberry jam">
+                    <label for="fillingBlueberry">Blueberry</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="fillingPastryCream" name="filling" value="Pastry cream">
+                    <label for="fillingPastryCream">Pastry cream</label>
+                </li>
+            </ul>
+        </section>
+
+        <!-- FROSTING OPTIONS -->
+        <section>
+            <h2>Frosting Choices</h2>
+            <ul class="checkbox-group">
+                <li>
+                    <input type="checkbox" id="frostingItalian" name="frosting" value="Italian meringue">
+                    <label for="frostingItalian">Italian meringue (adds $5)</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="frostingAmerican" name="frosting" value="American buttercream">
+                    <label for="frostingAmerican">American buttercream</label>
+                </li>
+            </ul>
+        </section>
+
+        <!-- BUILDER ACTIONS -->
+        <div class="builder-actions">
+            <button id="build-cake" class="cart-btn">Review my cake</button>
+
+            <!-- Hidden button that cart.js will use -->
+            <button id="hidden-add-cake-cart"
+                    class="add-to-cart"
+                    data-item=""
+                    data-price="65"
+                    style="display:none;">
+                Add cake to cart
+            </button>
+
+
+            <p id="cake-message" class="cart-message"></p>
+        </div>
+
+                <!-- CAKE REVIEW OVERLAY -->
+        <div id="cake-review-overlay" class="cake-review-overlay" aria-hidden="true">
+            <div class="cake-review-box" role="dialog" aria-modal="true" aria-labelledby="cake-review-title">
+                <h2 id="cake-review-title">Review your custom cake</h2>
+                <p id="cake-review-text"></p>
+
+                <div class="cake-review-actions">
+                    <button id="confirm-cake" class="cart-btn">Yes, add to cart</button>
+                    <button id="edit-cake" class="cart-btn secondary-btn">Edit choices</button>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <p>© 2025 Blissful Bakes – All Rights Reserved</p>
+        <p><a href="policies.html" target="_blank" rel="noopener">Store Policies and Privacy Information (new tab)</a></p>
+        <p id="date-time"></p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/cart.js"></script>
+    <script src="js/cake.builder.js"></script>
+    <script src="js/date-time.js"></script>
+</body>
+</html>
